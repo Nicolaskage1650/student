@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="croppie.css" />
+  <link rel="stylesheet" href="demo.css" />
+  <script src="croppie.js"></script>
+<style type="text/css">
+	.cr-boundary{
+		min-height: 200px;
+	}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+	<div class="row">
+		<div class="col-md-4">
+			<div id="demo-basic"></div>
+		</div>
+		<div class="col-md-4"></div>
+		<div class="col-md-4">
+			<button class="basic-result">Crop</button>
+		</div>
+		<div class="col-md-12">
+			<br><br><br><br>
+		</div>
+		<div class="col-md-12">
+			<img src="" id="output">
+		</div>
+	</div>
+
+	
+	
+
+	
+  
+</div>
+
+
+
+<script type="text/javascript">
+	var basic = $('#demo-basic').croppie({
+	    viewport: {
+	        width: 200,
+	        height: 200
+	    }
+	});
+	basic.croppie('bind', {
+	    url: 'photo.jpg',
+	    points: [77,469,280,739]
+	});
+	
+
+	$('.basic-result').on('click', function() {
+			
+			var size = { width: 200, height:200  };
+			basic.croppie('result', {
+				type: 'canvas',
+				size: size,
+				resultSize: {
+					width: 200,
+					height: 200
+				}
+			}).then(function (resp) {
+				// console.log(resp);
+				$('#output').attr('src',resp);
+			});
+		});
+
+
+
+</script>
+</body>
+</html>

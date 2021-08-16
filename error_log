@@ -1,0 +1,10 @@
+[22-Jan-2019 05:46:43 Etc/GMT] PHP Fatal error:  Cannot use isset() on the result of an expression (you can use "null !== expression" instead) in /home/flexituffproject/public_html/roll/application/controllers/Welcome.php on line 128
+[22-Jan-2019 05:47:03 Etc/GMT] PHP Fatal error:  Cannot use isset() on the result of an expression (you can use "null !== expression" instead) in /home/flexituffproject/public_html/roll/application/controllers/Welcome.php on line 128
+[05-Feb-2019 12:23:22 Asia/Calcutta] PHP Fatal error:  Can't use method return value in write context in /home/flexituffproject/public_html/roll/application/controllers/Welcome.php on line 57
+[05-Feb-2019 14:15:50 Asia/Calcutta] PHP Fatal error:  Redefinition of parameter $time1 in /home/flexituffproject/public_html/roll/application/controllers/Welcome.php on line 306
+[05-Feb-2019 14:16:50 Asia/Calcutta] PHP Fatal error:  Redefinition of parameter $time1 in /home/flexituffproject/public_html/roll/application/controllers/Welcome.php on line 714
+[06-Feb-2019 13:54:41 Asia/Calcutta] PHP Fatal error:  Cannot redeclare Welcome::get_wo() in /home/flexituffproject/public_html/rollnew/application/controllers/Welcome.php on line 936
+[06-Feb-2019 13:57:57 Asia/Calcutta] PHP Fatal error:  Cannot redeclare Welcome::process_start() in /home/flexituffproject/public_html/rollnew/application/controllers/Welcome.php on line 952
+[08-Feb-2019 12:48:43 Asia/Calcutta] PHP Fatal error:  Maximum execution time of 300 seconds exceeded in /home/flexituffproject/public_html/rollnew/system/libraries/Session/drivers/Session_files_driver.php on line 212
+[08-Feb-2019 12:55:55 Asia/Calcutta] PHP Fatal error:  Maximum execution time of 300 seconds exceeded in /home/flexituffproject/public_html/rollnew/system/libraries/Session/drivers/Session_files_driver.php on line 212
+[08-Feb-2019 18:07:52 Asia/Calcutta] PHP Fatal error:  Maximum execution time of 300 seconds exceeded in /home/flexituffproject/public_html/rollnew/system/libraries/Session/drivers/Session_files_driver.php on line 212
